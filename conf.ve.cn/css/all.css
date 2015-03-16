@@ -1,0 +1,171 @@
+/* main styles */
+body {margin:0;padding:0;background:#BBD9EE; color:#000;font-family:tahoma,arial,sans-serif;font-size:11px;}
+form {margin:0;padding:0}
+img {border:none;}
+a{color:#060606;text-decoration: none}
+a:hover {text-decoration: underline}
+input {vertical-align:middle}
+.floatleft {float:left !important}
+.floatright {float:right !important}
+.clear {clear:both !important}
+.bold {font-weight:bold !important}
+.normal {font-weight:normal !important}
+.block {display:block !important}
+input.text,select,textarea {font-family:arial,sans-serif;color:#333;font-size:12px;vertical-align:middle;}
+input.text {padding:1px 0 0 4px;height:14px;font-weight:normal;}
+/* main container */
+#main {width:992px;margin:0 auto;}
+/* header */
+#header {position:relative;width:100%;height:78px;background:url(../img/bg-header.gif) no-repeat left bottom;}
+/* site logo */
+a.logo {position:absolute;top:5px;left:20px;}
+/* header tabs */
+#top-navigation {
+	position:absolute;
+	top:32px;
+	left:20px;
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#top-navigation li {
+	float:left;
+	margin:0 3px 0 0;
+	height:34px;
+	background:url(../img/tab.gif) repeat-x top;
+	cursor:pointer;
+	font-weight:bold;
+	}
+#top-navigation li:hover{color:red;}
+#top-navigation li span {
+	float:left;
+	background:url(../img/tab-left.gif) no-repeat left top;
+	}
+#top-navigation li span span {
+	background:url(../img/tab-right.gif) no-repeat right top;
+	padding:13px 10px 0 10px;
+	}
+#top-navigation li.active {
+	padding:0;
+	height:34px;
+	background:url(../img/tab-active.gif) repeat-x top;
+	margin-right:2px;
+	}
+#top-navigation li.active span {
+	background:url(../img/tab-active-left.gif) no-repeat left top;
+	height:34px;
+	}
+#top-navigation li.active span span {
+	background:url(../img/tab-active-right.gif) no-repeat right top;
+	height:23px;
+	padding:11px 10px 0 10px;
+	line-height:19px;
+	color:#606060;
+	}
+	
+/* middle */
+#middle {
+	float:left;
+	width:967px;
+	min-height:600px;
+	background:url(../img/bg-middle.gif) repeat-y left;
+	padding:0 13px 0 12px;
+	}
+/* center column */
+.center-column {
+	float:left;
+	width:98%;
+	min-height:584px;
+	padding:12px 16px 0 13px;
+	}	
+* html .center-column {height:584px;}
+
+/* footer */
+#footer {
+	float:left;
+	width:100%;
+	background:url(../img/bg-footer.gif) no-repeat;
+	height:15px;
+	}
+	
+/* table container */
+div.table {
+	float:left;
+	position:relative;
+	width:100%;
+	margin:0 0 3px 0;
+	}
+table.listing {
+	border-bottom:1px solid #9097A9;
+	width:100%;
+	padding:0;
+	margin:0;
+	border:1px solid #9097A9;
+	}
+table.listing th {
+	border-top:0 !important;
+	}
+table.listing th.full {border-left:0;border-right:0 !important;text-align:left;text-transform:uppercase;}
+div.table img.left {
+	position:absolute;
+	top:0;
+	left:0;
+        width:8px;
+        height:7px;
+	}
+div.table img.right {
+	position:absolute;
+	top:0;
+	right:0px;
+        width:7px;
+        height:7px;
+	}
+/* table styles */
+table.listing td,
+table.listing th {
+	border:1px solid #fff;
+	text-align:center;
+	}	
+table.listing th {
+	background:#9097A9;
+	color:#fff;
+	padding:5px;
+	}
+table.listing td {
+	color:#000;
+	padding:3px 5px;
+	}
+table.listing tr{background:#D8D8D8;}
+table.listing .bg td {background:#ECECEC;font-weight:bold;}
+table.listing .white td {background:#fff;}
+table.listing .first {border-left:0px solid #9097A9;text-align:left;}
+table.listing .last {border-right:0px solid #9097A9;}
+table.listing .last img{cursor:pointer;}
+
+table.listing th.first {background:#9097A9 url(../img/bg-th-left.gif) no-repeat left top;border-left:0;}
+table.listing th.last {background:#9097A9 url(../img/bg-th-right.gif) no-repeat right top;border-right:0;}
+
+table.form .last {padding:1px 0 1px 5px;text-align:left;}
+table.form th,
+table.form td {padding-left:10px;}
+table.form input.text {width:262px}
+
+/* table select */
+div.table .select {
+	float:right;
+	margin:2px 1px 0 0;
+	width:176px;
+	height:25px;
+	background:#9097A9 url(../img/bg-select.gif);
+	color:#fff;
+	}
+div.table .select strong {
+	float:left;
+	padding:5px 0 0 5px;
+	}	
+div.table .select select {
+	float:right;
+	width:78px;
+	margin:2px 3px 0 0;
+	text-align:right;	
+	}

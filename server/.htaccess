@@ -1,0 +1,154 @@
+rewrite ^/index(/|\.html)?$ /index.php last;
+rewrite ^/mobile.html$ /index.php?ctl=mobile last;
+rewrite ^/support.html$ /index.php?ctl=support last;
+rewrite ^/user-login.html$ /index.php?ctl=user&act=login last;
+rewrite ^/user-logout.html$ /index.php?ctl=user&act=logout last;
+rewrite ^/user-dologin.html$ /index.php?ctl=user&act=dologin last;
+rewrite ^/user-register.html$ /index.php?ctl=user&act=register last;
+rewrite ^/user-doregister.html$ /index.php?ctl=user&act=doregister last;
+rewrite ^/user-mobileregister.html$ /index.php?ctl=user&act=mobileregister last;
+rewrite ^/uc_account.html$ /index.php?ctl=uc_account last;
+rewrite ^/uc_account-save.html$ /index.php?ctl=uc_account&act=save last;
+rewrite ^/uc_consignee.html$ /index.php?ctl=uc_consignee last;
+rewrite ^/uc_consignee-save.html$ /index.php?ctl=uc_consignee&act=save last;
+rewrite ^/uc_order-view/id-(\d+).html$ /index.php?ctl=uc_order&act=view&id=$1 last;
+rewrite ^/uc_order-save_message.html$ /index.php?ctl=uc_order&act=save_message last;
+rewrite ^/uc_sales_return/id-(\d+).html$ /index.php?ctl=uc_sales_return&id=$1 last;
+rewrite ^/uc_sales_return-return_mes.html$ /index.php?ctl=uc_sales_return&act=return_mes last;
+rewrite ^/uc_order-del/id-(\d+).html$ /index.php?ctl=uc_order&act=del&id=$1 last;
+rewrite ^/uc_order.html$ /index.php?ctl=uc_order last;
+rewrite ^/uc_order-p-(\d+).html$ /index.php?ctl=uc_order&p=$1 last;
+rewrite ^/help-(\d+).html$ /index.php?ctl=help&id=$1 last;
+rewrite ^/cart.html$ /index.php?ctl=cart last;
+rewrite ^/second.html$ /index.php?ctl=second last;
+rewrite ^/cond.html$ /index.php?ctl=second last;
+rewrite ^/goods-(\d+).html$ /index.php?ctl=goods&id=$1 last;
+rewrite ^/brandcate-(\d+).html$ /index.php?ctl=brandcate&id=$1 last;
+rewrite ^/brandcate-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$1&p=$2 last;
+rewrite ^/brandcate-(\d+).html&p=(\d+)$ /index.php?ctl=brandcate&id=$1&p=$2 last;
+rewrite ^/brandcate-(\d+)-(\d+).html$ /index.php?ctl=brandcate&id=$1&cate_id=$2 last;
+rewrite ^/ajax.html$ /index.php?ctl=ajax last;
+rewrite ^/cart-check.html$ /index.php?ctl=cart&act=check last;
+rewrite ^/ajax-ajax_login.html$ /index.php?ctl=ajax&act=ajax_login last;
+rewrite ^/cart-done.html$ /index.php?ctl=cart&act=done last;
+rewrite ^/payment-pay/id-(\d+).html$ /index.php?ctl=payment&act=pay&id=$1 last;
+rewrite ^/payment-tip/id-(\d+).html$ /index.php?ctl=payment&act=tip&id=$1 last;
+rewrite ^/uc_order-modify/id-(\d+).html$ /index.php?ctl=uc_order&act=modify&id=$1 last;
+rewrite ^/cart-order_done.html$ /index.php?ctl=cart&act=order_done last;
+rewrite ^/user-sendmsg.html$ /index.php?ctl=user&act=sendmsg last;
+rewrite ^/uc_sales_return-return_delivery/order_id-(\d+).html$ /index.php?ctl=uc_sales_return&act=return_delivery&order_id=$1 last;
+rewrite ^/uc_sales_return-do_return_delivery.html$ /index.php?ctl=uc_sales_return&act=do_return_delivery last;
+rewrite ^/resetpwd-username.html$ /index.php?ctl=resetpwd&act=username last;
+rewrite ^/resetpwd-waymobile/mobile-(\d+)-time-(\d+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=waymobile&mobile=$1&time=$2&sign=$3 last;
+rewrite ^/resetpwd-reset/mobile-(\d+)-time-(\d+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=reset&mobile=$1&time=$2&sign=$3 last;
+rewrite ^/resetpwd-wayemail/email-(.*?)-time-(\d+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=wayemail&email=$1&time=$2&sign=$3 last;
+rewrite ^/resetpwd-checkemail/email-(.*?)-time-(\d+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=checkemail&email=$1&time=$2&sign=$3 last;
+rewrite ^/resetpwd-reset/email-(.*?)-time-(\d+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=reset&email=$1&time=$2&sign=$3 last;
+rewrite ^/resetpwd-success/time-(\d+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=success&time=$1&sign=$2 last;
+rewrite ^/resetpwd-sendmobileajax.html$ /index.php?ctl=resetpwd&act=sendmobileajax last;
+rewrite ^/resetpwd-waymobile/code-([a-zA-Z0-9]+)-mobile-(\d+)-time-(\d+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=waymobile&mobile=$2&code=$1&time=$3&sign=$4 last;
+rewrite ^/resetpwd-reset/code-([a-zA-Z0-9]+)-mobile-(\d+)-time-(\d+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=reset&mobile=$2&code=$1&time=$3&sign=$4 last;
+rewrite ^/payment-pay/id-(\d+)-check-(\d+).html$ /index.php?ctl=payment&act=pay&id=$1&check=$2 last;
+rewrite ^/payment-done/id-(\d+).html$ /index.php?ctl=payment&act=done&id=$1 last;
+rewrite ^/android_app.html$ /index.php?ctl=android_app last;
+rewrite ^/iphone_app.html$ /index.php?ctl=iphone_app last;
+rewrite ^/download.html$ /index.php?ctl=download last;
+rewrite ^/cartajax-save.html$ /index.php?ctl=cartajax&act=save last;
+rewrite ^/cartajax-del.html$ /index.php?ctl=cartajax&act=del last;
+rewrite ^/cartajax-update.html$ /index.php?ctl=cartajax&act=update last;
+rewrite ^/ref-(\w+).html$ /index.php?ctl=user&act=ref&id=$1 last;
+rewrite ^/reg-(\w+).html$ /index.php?ctl=user&act=register&id=$1 last;
+
+rewrite ^/youhui.html$ /index.php?ctl=youhui last;
+rewrite ^/youhui-getcoupons.html$ /index.php?ctl=youhui&act=getcoupons last;
+rewrite ^/youhui-usecoupon.html$ /index.php?ctl=youhui&act=usecoupon last;
+rewrite ^/youhui-cancelcoupon.html$ /index.php?ctl=youhui&act=cancelcoupon last;
+
+##用户中心
+rewrite ^/uc_youhui.html$ /index.php?ctl=uc_youhui last;
+rewrite ^/uc_youhui-(\d+).html /index.php?ctl=uc_youhui&used=$1 last;
+rewrite ^/youhui-activatecoupon.html /index.php?ctl=youhui&act=activatecoupon last;
+rewrite ^/uc_account-resetpwd.html$ /index.php?ctl=uc_account&act=resetpwd last;
+rewrite ^/uc_order/type-(\d+).html$ /index.php?ctl=uc_order&type=$1 last;
+rewrite ^/resetpwd-bind_email/email-([^\-]+?)-id-(\d+)-time-([a-zA-Z0-9]+)-sign-([a-zA-Z0-9]+).html$ /index.php?ctl=resetpwd&act=bind_email&email=$1&id=$2&time=$3&sign=$4 last;
+rewrite ^/uc_youhui-(\d+).htm$ /index.php?ctl=uc_youhui&used=$1 last;
+rewrite ^/uc_account-ajax_save.html$ /index.php?ctl=uc_account&act=ajax_save last;
+rewrite ^/cartajax-add_list.html$ /index.php?ctl=cartajax&act=add_list last;
+rewrite ^/cartajax-set_default.html$ /index.php?ctl=cartajax&act=set_default last;
+rewrite ^/uc_order-del.html$ /index.php?ctl=uc_order&act=del last;
+rewrite ^/special/(\w+)\.html /index.php?ctl=special&act=$1 last;
+rewrite ^/payment-notpay/id-(\d+).html$ /index.php?ctl=payment&act=notpay&id=$1 last;
+
+rewrite ^/brandcate-(\d+)-field-(\d+).html$ /index.php?ctl=brandcate&id=$1&field=$2 last;
+rewrite ^/brandcate-(\d+)-field-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$1&field=$2&p=$3 last;
+rewrite ^/cart-address_add.html$ /index.php?ctl=cart&act=address_add last;
+rewrite ^/brandcate-(\d+)-field-(\d+).html$ /index.php?ctl=brandcate&id=$1&field=$2 last;
+rewrite ^/brandcate-(\d+)-field-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$1&field=$2&p=$3 last;
+rewrite ^/cartajax-can_codpay.html$ /index.php?ctl=cartajax&act=can_codpay last;
+
+rewrite ^/brandcate-(\d+)-(\d+).html$ /index.php?ctl=brandcate&id=$1&cate_id=$2 last;
+rewrite ^/brandcate-(\d+)-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$1&cate_id=$2&p=$3 last;
+
+rewrite ^/router/rest/(\w+).*$ /index.php?m=home&c=$1Api last;
+
+rewrite ^/(\w+)$ /$1/ permanent;
+
+if (!-e $request_filename){
+   rewrite ^/(\w+)/?$ /index.php?ctl=$1 last;
+   rewrite ^/(\w+)\.html$ /index.php?ctl=$1 last;
+   rewrite ^/(\w+)-(\w+).html$ /index.php?ctl=$1&act=$2 last;
+   rewrite ^/(\w+)-(\w+)/(\w+)-(\w+)\.html$ /index.php?ctl=$1&act=$2&$3=$4 last;
+   rewrite ^/(\w+)-(\w+)/(\w+)-(\w+)-(\w+)-(\w+)\.html$ /index.php?ctl=$1&act=$2&$3=$4&$5=$6 last;
+   rewrite ^/(\w+)/(\w+)-(\w+).html /index.php?ctl=$1&act=index&$2=$3 last;
+   rewrite ^/(\w+)/(\w+)-(\w+)-(\w+)-(\w+).html$ /index.php?ctl=$1&act=index&$2=$3&$4=$5 last;
+   rewrite ^/(\w+)/(\w+)-(\w+)-(\w+)-(\w+)-(\w+)-(\w+).html$ /index.php?ctl=$1&act=index&$2=$3&$4=$5&$6=$7 last;
+}
+
+rewrite ^/brandcate-(\d+)-(\w+)-(\d+).html$  /index.php?ctl=brandcate&id=$1&$2=$3 last;
+rewrite ^/brandcate-(\d+)-(\w+)-(\d+)-(\w+)-(\d+).html$  /index.php?ctl=brandcate&id=$1&$2=$3&$4=$5 last;
+rewrite ^/brandcate-(\d+)-(\w+)-(\d+)-p-(\d+).html$  /index.php?ctl=brandcate&id=$1&$2=$3&p=$4 last;
+rewrite ^/brandcate-(\d+)-(\w+)-(\d+)-(\w+)-(\d+)-p-(\d+).html$  /index.php?ctl=brandcate&id=$1&$2=$3&$4=$5&p=$6 last;
+rewrite ^/brandcate-(\d+)-(\d+)-(\w+)-(\d+).html$ /index.php?ctl=brandcate&id=$1&cate_id=$2&$3=$4 last;
+rewrite ^/brandcate-(\d+)-(\d+)-(\w+)-(\d+)-(\w+)-(\d+).html$ /index.php?ctl=brandcate&id=$1&cate_id=$2&$3=$4&$5=$6 last;
+rewrite ^/brandcate-(\d+)-(\d+)-(\w+)-(\d+)-(\w+)-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$1&cate_id=$2&$3=$4&$5=$6&p=$7 last;
+rewrite ^/brandcate-(\d+)-(\w+)-(\d+)-(\w+)-(\d+)-p-(\d+).html$  /index.php?ctl=brandcate&id=$1&$2=$3&$4=$5&p=$6 last;
+
+rewrite ^/apilogin-callback/type/(\w+)/ /index.php?ctl=apilogin&act=callback&type=$1 last;
+
+rewrite ^/payment-pay/id-(\d+)-notreg-([^-\.]+).html$ /index.php?ctl=payment&act=pay&id=$1&notreg=$2 last;
+rewrite ^/payment-done/id-(\d+)-notreg-([^-\.]+).html$ /index.php?ctl=payment&act=done&id=$1&notreg=$2 last;
+rewrite ^/payment-notpay/id-(\d+)-notreg-([^-\.]+).html$ /index.php?ctl=payment&act=notpay&id=$1&notreg=$2 last;
+
+rewrite ^/download-downloadapp.html$ /index.php?ctl=download&act=downloadapp last;
+rewrite ^/koubei-p-(\d+).html$ /index.php?ctl=koubei&p=$1 last;
+rewrite ^/gift.html$ /index.php?ctl=gift last;
+rewrite ^/gift2.html$ /index.php?ctl=gift2 last;
+
+rewrite ^/medium.html$ /index.php?ctl=medium last;
+
+rewrite ^/gift-(\d+)-(\w+)-(\d+).html$ /index.php?ctl=gift&utm_source=dx&utm_medium=gift&utm_term=dx&utm_content=dx&utm_campaign=dx last;
+rewrite ^/dx2.html$ http://www.baidu.com/ last;
+rewrite ^/dx3.html$ /index.php?ctl=brandcate&id=1605&utm_source=dx&utm_medium=brandcate&utm_term=dx&utm_content=dx&utm_campaign=dx last;
+rewrite ^/([0-9_]+).xml$ /index.php?ctl=itemxml&ids=$1 last;
+#sem url
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+).html /index.php?ctl=brandcate&id=$3&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\w+)-(\d+).html /index.php?ctl=brandcate&id=$3&$4=$5&sem=1 last;
+rewrite ^/(\w+)/(\w+)/goods-(\d+).html /index.php?ctl=goods&id=$3&sem=1 last;
+rewrite ^/(\w+)/(\w+)/goods-(\d+).html /index.php?ctl=goods&id=$3&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+).html$ /index.php?ctl=brandcate&id=$3&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$3&p=$4&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+).html&p=(\d+)$ /index.php?ctl=brandcate&id=$3&p=$4&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\d+).html$ /index.php?ctl=brandcate&id=$3&cate_id=$4&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-field-(\d+).html$ /index.php?ctl=brandcate&id=$3&field=$4&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-field-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$3&field=$4&p=$5&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\d+).html$ /index.php?ctl=brandcate&id=$3&cate_id=$4&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$3&cate_id=$4&p=$5&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\w+)-(\d+).html$ /index.php?ctl=brandcate&id=$3&$4=$5&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\w+)-(\d+)-(\w+)-(\d+).html$ /index.php?ctl=brandcate&id=$3&$4=$5&$6=$7&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\w+)-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$3&$4=$5&p=$6&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\w+)-(\d+)-(\w+)-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$3&$4=$5&$6=$7&p=$8&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\d+)-(\w+)-(\d+).html$ /index.php?ctl=brandcate&id=$3&cate_id=$4&$5=$6&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\d+)-(\w+)-(\d+)-(\w+)-(\d+).html$ /index.php?ctl=brandcate&id=$3&cate_id=$4&$5=$6&$7=$8&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\d+)-(\w+)-(\d+)-(\w+)-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$3&cate_id=$4&$5=$6&$7=$8&p=$9&sem=1 last;
+rewrite ^/(\w+)/(\w+)/brandcate-(\d+)-(\w+)-(\d+)-(\w+)-(\d+)-p-(\d+).html$ /index.php?ctl=brandcate&id=$3&$4=$5&$6=$7&p=$8&sem=1 last;
+
